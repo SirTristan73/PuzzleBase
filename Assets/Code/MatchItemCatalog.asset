@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b852a0a26aa9ad84897ca2b1ae6211e7, type: 3}
+  m_Name: MatchItemCatalog
+  m_EditorClassIdentifier: 
+  Items:
+  - Type: 0
+    Sprite: {fileID: 21300000, guid: 54141a9f2acabb34198d4d68361d99a2, type: 3}
+    Color: {r: 1, g: 1, b: 1, a: 0}
+  - Type: 1
+    Sprite: {fileID: 21300000, guid: fe99b2fe9e987d449b60536609d65dd7, type: 3}
+    Color: {r: 1, g: 1, b: 1, a: 0}
+  - Type: 2
+    Sprite: {fileID: 21300000, guid: decbfb54a8681ea40b525f5ff24ffbef, type: 3}
+    Color: {r: 1, g: 1, b: 1, a: 0}
+  - Type: 3
+    Sprite: {fileID: 21300000, guid: b39245f4fd12d0446abbc2d76015511c, type: 3}
+    Color: {r: 1, g: 1, b: 1, a: 0}
+  - Type: 4
+    Sprite: {fileID: 21300000, guid: 955396b3df4fbac4cae62f144a2fb664, type: 3}
+    Color: {r: 1, g: 1, b: 1, a: 0}

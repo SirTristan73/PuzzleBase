@@ -1,7 +1,7 @@
 using UnityEngine;
 using EventManagment;
 
-public class GameManage : PersistentSingleton<GameManage>
+public class GameManager : PersistentSingleton<GameManager>
 {   
     private EventBus _bus;
     public EventBus BUS => _bus;
@@ -13,9 +13,5 @@ public class GameManage : PersistentSingleton<GameManage>
         _bus.SendEvent(new GameEvent(Events.Debug));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        _bus.SendEvent(new GameEvent(Events.Debug, "sdad"));
-    }
+
 }

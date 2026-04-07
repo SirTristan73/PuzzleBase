@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3996244879768487187}
   - component: {fileID: -126341742599892172}
   m_Layer: 5
-  m_Name: Image
+  m_Name: MatchItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

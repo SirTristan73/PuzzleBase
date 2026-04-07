@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 598657610}
   - component: {fileID: 598657609}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ScoreBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -413,7 +413,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 837103128}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &732883650
@@ -427,7 +428,7 @@ GameObject:
   - component: {fileID: 732883652}
   - component: {fileID: 732883651}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: CharJuicer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -476,7 +477,7 @@ GameObject:
   - component: {fileID: 747848393}
   - component: {fileID: 747848392}
   m_Layer: 5
-  m_Name: Image
+  m_Name: CharacterImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -611,12 +612,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837103125}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 619394802}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1073855711
 GameObject:
@@ -628,26 +629,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1073855714}
   - component: {fileID: 1073855713}
-  - component: {fileID: 1073855712}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1073855712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073855711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ae8f0e39abdfa145878d59f25db38d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1073855713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,7 +674,7 @@ GameObject:
   - component: {fileID: 1182411970}
   - component: {fileID: 1182411969}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: LevelController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -707,6 +695,7 @@ MonoBehaviour:
   _width: 8
   _height: 8
   _itemTypesCount: 5
+  _scorePerItem: 10
   _itemPrefab: {fileID: 5825383819298308827, guid: ea66a672b7d4260408fa8744e9fc328c, type: 3}
   _catalog: {fileID: 11400000, guid: 0f0eefb66ef6fd141aa4d82dfb40fb0a, type: 2}
   _gridParent: {fileID: 1350968730}
@@ -738,7 +727,7 @@ GameObject:
   - component: {fileID: 1350968732}
   - component: {fileID: 1350968731}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -813,7 +802,7 @@ GameObject:
   - component: {fileID: 1353610648}
   - component: {fileID: 1353610647}
   m_Layer: 5
-  m_Name: Image
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -888,7 +877,7 @@ GameObject:
   - component: {fileID: 1525304414}
   - component: {fileID: 1525304413}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1129,7 +1118,7 @@ GameObject:
   - component: {fileID: 1828965891}
   - component: {fileID: 1828965890}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: ScoreDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1173,6 +1162,5 @@ SceneRoots:
   - {fileID: 1073855714}
   - {fileID: 1182411970}
   - {fileID: 1813027889}
-  - {fileID: 837103128}
   - {fileID: 732883652}
   - {fileID: 1828965891}
